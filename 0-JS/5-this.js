@@ -21,3 +21,12 @@ complejo.funcion();
 // 3- within an object
 // 4- global || undefined en strict mode
 
+/** CLOSURES */
+
+
+for (var i = 1; i <= 5; i++){
+    console.log("PRESENT OUT i" + i);
+    setTimeout(function () {
+        console.log("FUTURE IN i" + i);
+    }, 1000);
+}
