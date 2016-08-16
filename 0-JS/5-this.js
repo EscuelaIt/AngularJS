@@ -30,3 +30,21 @@ for (var i = 1; i <= 5; i++){
         console.log("FUTURE IN i" + i);
     }, 1000);
 }
+/*
+for (var i = 1; i <= 5; i++){
+    console.log("PRESENT OUT i" + i);
+    (function (i) {
+        setTimeout(function () {
+            console.log("FUTURE IN i" + i);
+        }, 1000);
+    })();    
+}
+*/
+/*
+for (let i = 1; i <= 5; i++){
+    console.log("PRESENT OUT i" + i);
+    setTimeout(function () {
+        console.log("FUTURE IN i" + i);
+    }, 1000);
+}
+*/
