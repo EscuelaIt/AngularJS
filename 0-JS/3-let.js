@@ -5,16 +5,16 @@ console.log(varES6);
 
 let a = 1;
 let b = 1;
-let c = "inicial";
+let mensaje = "inicial";
 
 if (a == b) {
-    let c = "son iguales";
-    console.log(c);
+    let mensaje = "son iguales";
+    console.log(mensaje);
 }
 else {
-    let c = "son distintos";
-    console.log(c);
+    let mensaje = "son distintos";
+    console.log(mensaje);
 }
 
-// la variable c se define en distinso ámbitos
-console.log(c);
+// la variable mensaje se define en distinso ámbitos
+console.log(mensaje);

@@ -12,7 +12,7 @@ function miFuncion() {
 }
 
 function otraFuncion(miVariable) {
-	miVariable = "privada de otraFuncion vía parámetros";
+    miVariable = "privada de otraFuncion vía parámetros";
     otraVariable = "no es global, es local de otraFuncion!!!";
     console.log(miVariable);
     console.log(otraVariable);
