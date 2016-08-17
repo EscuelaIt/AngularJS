@@ -172,7 +172,12 @@ var nombre = miPadre.nombre;
 var apellido = miPadre["apellido"];
 var edad = miPadre[2];
 
+Object.keys(miPadre);
+Object.keys(miPadre)[2]:
+
 miPadre.profesion = "Jedi";
+
+Object.keys(miPadre);
 
 ```
 

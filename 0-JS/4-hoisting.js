@@ -1,30 +1,34 @@
 // las declaraciones 'suben' al principio del módulo
-// var a;
-// var b;
-/*
-a;
-b;
-var a = b;
-var b = 2;
-b;
-a;
-*/
+// pero las inicializaciones se quedan
 
 
+var inicializadaAntes = 1;
+var declaradaAntes;
+console.log(inicializadaAntes + " - " + declaradaAntes + " - " + declaradaDespues + " - " + inicializadaDespues );
+declaradaAntes = 2;
+declaradaDespues = 3;
+console.log(inicializadaAntes + " - " + declaradaAntes + " - " + declaradaDespues + " - " + inicializadaDespues );
+var declaradaDespues;
+var inicializadaDespues = 4;
+console.log(inicializadaAntes + " - " + declaradaAntes + " - " + declaradaDespues + " - " + inicializadaDespues );
+
+
+/** Impacto en la Elevación de funciones según su definición */
+
 /*
-var a = funcionDeclaradaSuperElevada();
-var c = funcionExpresionSeQueda();
-console.log(a);
-console.log(c);
+var llamadaElevada = funcionDeclaradaSuperElevada();
+var llamadaProfunda = funcionExpresionSeQueda();
+console.log(llamadaElevada);
+console.log(llamadaProfunda);
 
 function funcionDeclaradaSuperElevada() {
-	return c;
+    return "Me elevo... :-)";
 }
 var funcionExpresionSeQueda = function () {
-	return funcionDeclaradaSuperElevada();
+    return "Me quedo :-( ";
 };
 */
-
+/*
 function funcionDeclaradaSuperElevada() {
     return c;
 }
@@ -38,3 +42,4 @@ console.log(c);
 funcionExpresionSeQueda = function () {
     return funcionDeclaradaSuperElevada();
 };
+*/
