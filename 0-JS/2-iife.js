@@ -2,17 +2,18 @@
     // es un sentencia
     //console.log('como expresión el iiffe falla')
     function funcionInterna() {
-        console.log("funcionInterna autoinvocada");
+        var nombre = "Luis";
+        console.log("funcionInterna autoinvocada: " + nombre);
+    }
+)();
+(function() {
+        var nombre = "Pepe";
+        console.log("saludo autoinvocada: " + nombre);
     }
 )();
 
 
-(
-    function saludar() {
-        console.log("saludo autoinvocada");
-    }
-)();
-
+//saludar();
 
 (
     function saludar(nombre) {
@@ -25,6 +26,7 @@ var miVariable = "modular";
 /** creación de un espacio de nombre protegido
  * y autoejecutable
  */
+
 (function funcionIIFE() {
     var miVariable = "local de la funcionIIFE";
     console.log(miVariable);
