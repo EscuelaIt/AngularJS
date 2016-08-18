@@ -33,3 +33,26 @@ var miVariable = "modular";
 })();
 
 console.log(miVariable);
+
+/** Module pattern */
+
+var logger = (function () {
+    var deboUsarConsola = true;
+    return {
+        quieroUsarConsola : deboUsarConsola,
+        debug: function (mensaje) {
+            if (deboUsarConsola) {
+                console.debug(mensaje);
+            }
+        },
+        error: function (excepcion) {
+            if (deboUsarConsola) {
+                console.error(excepcion);
+            }
+        }
+    };
+}
+)();
+
+logger.quieroUsarConsola = true;
+logger.debug("hola");
