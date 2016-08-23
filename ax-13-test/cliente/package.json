@@ -25,4 +25,3 @@
     "karma-jasmine": "^1.0.2"
   }
 }
-//sudo npm install -g karma-cli
