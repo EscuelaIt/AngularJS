@@ -15,6 +15,15 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      './node_modules/angular/angular.min.js',
+      './node_modules/angular-resource/angular-resource.min.js',
+      './node_modules/angular-ui-router/release/angular-ui-router.js',
+      './node_modules/angular-mocks/angular-mocks.js',
+      './app.js',
+      './config.js',
+      './servicios/servicios.js',    
+      './servicios/maestrosService.js',
+      './servicios/maestrosService.spec.js'
     ],
 
 
