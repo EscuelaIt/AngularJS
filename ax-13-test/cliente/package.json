@@ -1,0 +1,27 @@
+{
+  "name": "cliente",
+  "version": "1.0.0",
+  "description": "dependencias de la parte cliente",
+  "main": "app.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "keywords": [
+    "karma",
+    "jasmine",
+    "npm"
+  ],
+  "author": "Alberto Basalo",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-cookies": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.2.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2"
+  }
+}
