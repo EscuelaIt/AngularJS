@@ -36,7 +36,7 @@
 ```
 ## Eventos
 ```html
-<p id="identificador" onlick="saludar() onmouseover="sobrevuela(this)"">Te saludo</p>
+<p id="identificador" onclick="saludar()" onmouseover="sobrevuela(this)">Te saludo</p>
 
 <script>
     var elemento = document.getElementById("identificador")

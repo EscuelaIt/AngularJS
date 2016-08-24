@@ -6,10 +6,10 @@
         console.log("funcionInterna autoinvocada: " + nombre);
     }
 )();
-(function() {
-        var nombre = "Pepe";
-        console.log("saludo autoinvocada: " + nombre);
-    }
+(function () {
+    var nombre = "Pepe";
+    console.log("saludo autoinvocada: " + nombre);
+}
 )();
 
 
@@ -38,21 +38,26 @@ console.log(miVariable);
 
 var logger = (function () {
     var deboUsarConsola = true;
-    return {
-        quieroUsarConsola : deboUsarConsola,
-        debug: function (mensaje) {
-            if (deboUsarConsola) {
-                console.debug(mensaje);
-            }
-        },
+    var resultado = {
+        quieroUsarConsola: function(p){
+            deboUsarConsola = p;
+        }, //deboUsarConsola,
+        debug: funcionDebug,
         error: function (excepcion) {
             if (deboUsarConsola) {
                 console.error(excepcion);
             }
         }
     };
+    function funcionDebug (mensaje) {
+        if (deboUsarConsola) {
+            console.debug(mensaje);
+        }
+    }
+
+    return resultado;
 }
 )();
 
-logger.quieroUsarConsola = true;
+logger.quieroUsarConsola(false);
 logger.debug("hola");
