@@ -1,5 +1,5 @@
 // Es necesario incluir la referencia al módulo de componentes
-angular.module('cashFlow', ['ui.router', 'abFiltros', 'abComponentes']);
+angular.module('cashFlow', ['operadores','ui.router', 'abFiltros', 'abComponentes']);
 
 
 angular.module('cashFlow').config(function ($stateProvider) {
