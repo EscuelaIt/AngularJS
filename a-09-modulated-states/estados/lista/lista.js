@@ -1,4 +1,4 @@
-(function () {
+  (function () {
 
 	angular.module('lista', ['ui.router', 'abFiltros', 'abComponentes', 'servicios'])
 		.config(function ($stateProvider) {
@@ -12,6 +12,7 @@
 			templateUrl: './estados/lista/lista.html',
 			controller: function (movimientosService) {
 				this.valorCorte = 1;
+				this.sentido = false;
                 this.movimientos = movimientosService.getMovimientos();
 			}
 		})
